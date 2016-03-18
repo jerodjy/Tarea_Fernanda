@@ -122,7 +122,7 @@ plot(1:length(by.day.clean),by.day.clean,type="l",main="Step average per day",xl
 Grafica del promedio por hora del dia
 No se podia hacer este analisis sin ignorar los NAs, por lo que decidi implementarlo una vez que me encargue de los datos faltantes.
 
-```{r}
+```{r echo=TRUE}
 by.interval.clean<-tapply(activity.clean[,1],activity.clean[,3],mean)
 plot(1:length(by.interval.clean),by.interval.clean,type="l",main="Step average throughout the day",xlab="5 minute intervals",ylab="Step average")
 ```
